@@ -7,7 +7,6 @@ Created on Wed Jan 22 18:41:19 2020
 
 from PIL import Image, ImageDraw, ImageFont
 import sqlite3
-import PIL
 # Body Process Area's
 killer_area = (10,175,310,488)
 victim_area = (310,175,610,488)
