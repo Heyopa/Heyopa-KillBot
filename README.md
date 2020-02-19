@@ -15,4 +15,5 @@ Q - How can ı get a channel id?
 A - Create a webhook and open it in browser take the channel id.
 
 Link-1 = https://gameinfo.albiononline.com/api/gameinfo/events
+
 Image-1 = https://cdn.discordapp.com/attachments/635880305718460416/679664579227156485/unknown.png
