@@ -13,7 +13,7 @@ from discord import Webhook, AsyncWebhookAdapter, RequestsWebhookAdapter, File
 # Token for Bot
 bot_token = "XXX"
 # Webhook ID and Token
-id = 123123
+id = XXX
 token = "XXX"
 # Creating Webhook
 mwebhook = discord.Webhook.partial(id= id, token= token, adapter=RequestsWebhookAdapter())
@@ -27,7 +27,7 @@ async def on_ready():
 @client.command()
 async def heyobot(message):
     # Taking diffrent channel_id for sending image and taking url!
-    img_channel = await client.fetch_channel(channel_id=123123123)
+    img_channel = await client.fetch_channel(channel_id= XXX)
     while True:
         # Web scraping
         x = webscraping.Main_Events()
