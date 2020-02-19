@@ -10,8 +10,9 @@ import os
 from discord.ext import commands
 from PIL import Image
 from discord import Webhook, AsyncWebhookAdapter, RequestsWebhookAdapter, File
-# Token for Bot
+# Token and channel id for Bot
 bot_token = "XXX"
+chID = XXX
 # Webhook ID and Token
 id = XXX
 token = "XXX"
@@ -26,8 +27,8 @@ async def on_ready():
 # Main Bot Func
 @client.command()
 async def heyobot(message):
-    # Taking diffrent channel_id for sending image and taking url!
-    img_channel = await client.fetch_channel(channel_id= XXX)
+    # Fetching to image sending channel
+    img_channel = await client.fetch_channel(channel_id= chID)
     while True:
         # Web scraping
         x = webscraping.Main_Events()
@@ -71,4 +72,4 @@ async def heyobot(message):
         print("Waiting next scraping!")
         tm.sleep(5)
 
-client.run("XXX")
+client.run(bot_token)
